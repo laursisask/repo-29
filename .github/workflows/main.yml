@@ -33,8 +33,3 @@ jobs:
         with:
           push: true
           tags: infobip/${{ github.event.repository.name }}:latest
-      
-      # Outputs the image content-addressable identifier.
-      -
-        name: Image digest
-        run: echo ${{ steps.docker_build.outputs.digest }}
