@@ -1,7 +1,7 @@
 FROM codeany/rte-base
 LABEL key="Infobip"
 
-# Custom Plugins
+# Custom plugins
 
 USER theia
 COPY plugins/GabrielBB.vscode-lombok-1.0.1.vsix /home/theia/plugins/GabrielBB.vscode-lombok-1.0.1.vsix
