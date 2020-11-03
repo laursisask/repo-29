@@ -3,7 +3,7 @@ LABEL key="Infobip"
 USER root
 
 # Java
-RUN apt-get update && apt-get -y install openjdk-11-jdk maven gradle
+# RUN apt-get update && apt-get -y install openjdk-11-jdk maven gradle
 
 # Editor extensions
 # RUN code --install-extension gabrielbb.vscode-lombok
