@@ -17,6 +17,9 @@ import okhttp3.Response;
 
 public class SendSms {
 
+    private static final String BASE_URL = System.getenv("IB_ENDPOINT_URL");
+    private static final String ACCESS_TOKEN = String.format("IBSSO %s", System.getenv("IB_TOKEN"));
+
     private static final Gson gson = new GsonBuilder()
         .setPrettyPrinting()
         .create();
@@ -24,8 +27,6 @@ public class SendSms {
     public static void main(String[] args)
         throws IOException {
 
-        // Your settings
-        String baseUrl = "insert_base_url_here";
         String receiverPhoneNumber = "insert_receiver_phone_number_here";
 
         Destination destination = new Destination();
@@ -44,8 +45,10 @@ public class SendSms {
         RequestBody body = RequestBody.create(json, mediaType);
 
         Request request = new Request.Builder()
-            .url(String.format("https://%s/sms/2/text/advanced", baseUrl))
+            .url(String.format("https://%s/sms/2/text/advanced", BASE_URL))
             .method("POST", body)
+            .addHeader("Authorization", ACCESS_TOKEN)
+            .addHeader("Content-Type", "application/json")
             .build();
 
         OkHttpClient client = new OkHttpClient();
