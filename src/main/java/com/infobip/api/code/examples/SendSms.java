@@ -53,5 +53,7 @@ public class SendSms {
 
         OkHttpClient client = new OkHttpClient();
         Response response = client.newCall(request).execute();
+
+        System.out.println(response.code() == 200 ? "Successfully sent SMS message." : "Failed to send SMS message.");
     }
 }
