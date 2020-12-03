@@ -7,7 +7,6 @@ COPY plugins/GabrielBB.vscode-lombok-1.0.1.vsix /home/theia/plugins/GabrielBB.vs
 
 # Project Settings
 COPY settings/project-settings.json /home/project/.theia/settings.json
-COPY settings/project-settings.json /home/project/.vscode/settings.json
 
 # Developer tools
 USER root
