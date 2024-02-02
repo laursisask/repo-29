@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.1]
+### Changed
+- Update `@metamask/ethjs-rpc` from `^0.3.1` to `^0.4.0` ([#43](https://github.com/MetaMask/ethjs-query/pull/43))
+  - Package migrated from babel 6 to 7
+
 ## [0.7.0]
 ### Changed
 - Update from `ethjs-format@0.2.7` to `@metamask/ethjs-format@^0.3.0` ([#26](https://github.com/MetaMask/ethjs-query/pull/26))
@@ -185,7 +190,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - linting
   - basic exports
 
-[Unreleased]: https://github.com/MetaMask/ethjs-query/compare/v0.7.0...HEAD
+[Unreleased]: https://github.com/MetaMask/ethjs-query/compare/v0.7.1...HEAD
+[0.7.1]: https://github.com/MetaMask/ethjs-query/compare/v0.7.0...v0.7.1
 [0.7.0]: https://github.com/MetaMask/ethjs-query/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/MetaMask/ethjs-query/compare/v0.5.3...v0.6.0
 [0.5.3]: https://github.com/MetaMask/ethjs-query/compare/v0.5.2...v0.5.3
