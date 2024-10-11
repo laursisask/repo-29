@@ -539,7 +539,7 @@ jobs:
         CIBW_BUILD_VERBOSITY: 1
         CIBW_ENVIRONMENT: CMAKE_BUILD_PARALLEL_LEVEL=4
       name: Build wheels for manylinux with qemu
-      uses: pypa/cibuildwheel@v2.20.0
+      uses: pypa/cibuildwheel@v2.21.3
       with:
         output-dir: wheelhouse
     - continue-on-error: true
@@ -843,7 +843,7 @@ jobs:
         CIBW_BUILD_VERBOSITY: 1
         CIBW_ENVIRONMENT: CMAKE_BUILD_PARALLEL_LEVEL=4
       name: Build wheels for manylinux with qemu
-      uses: pypa/cibuildwheel@v2.20.0
+      uses: pypa/cibuildwheel@v2.21.3
       with:
         output-dir: wheelhouse
     - continue-on-error: true
