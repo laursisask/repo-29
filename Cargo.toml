@@ -28,7 +28,7 @@ bincode = "1"
 blake3 = "1"
 byteorder = "1.0"
 bytes = "1"
-chrono = { version = "0.4.23", optional = true }
+chrono = { version = "0.4.38", optional = true }
 clap = { version = "3.2.22", features = ["derive", "env", "wrap_help"] }
 directories = "4.0.1"
 env_logger = "0.9"
@@ -98,7 +98,7 @@ aws-sig-auth = { version = "0.51", optional = true }
 [dev-dependencies]
 assert_cmd = "=2.0.6"
 cc = "1.0"
-chrono = "0.4.22"
+chrono = "0.4.38"
 itertools = "0.10"
 predicates = "=2.1.2"
 thirtyfour_sync = "0.27"
